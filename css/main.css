@@ -1,0 +1,675 @@
+/*! HTML5 Boilerplate v5.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+
+@font-face{
+  font-family: homoarakhn;
+  src:url(../fonts/HOMOARAK.TTF);
+}
+@font-face{
+  font-family: Saucer;
+  src:url(../fonts/SaucerBB.ttf);
+}
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+#aboutme img {
+  border: 9px dotted #000;
+  border-radius: 100px;
+}
+#testimonial >.owl-carousel.owl-theme{
+  padding: 41px;
+}
+
+.container-full{
+  margin: 0 auto;
+  width: 100%;
+}
+.clearfix{
+    clear: both;
+}
+
+.contact-form{
+  padding: 10px;
+}
+.address{
+  padding: 10px;
+}
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+h1{
+  font-family: homoarakhn;
+  color: black;
+  padding:0;
+  margin: 0;
+
+}
+
+body{
+  color: #000;
+  background-color: #fff;
+  font-family: 'Pompiere', cursive;
+  font-size: 20px;
+}
+
+#aboutme h3 {
+  border-bottom: 2px solid;
+  margin: 20px auto;
+  width: 100px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  color: #000;
+  text-transform: uppercase;
+}
+
+.portfolio-item {
+  margin: 0 0 30px;
+  overflow: hidden;
+  position: relative;
+  
+  
+  
+  box-sizing: border-box;
+
+
+}
+
+.portfolio-item img{
+  width:100%;
+  height: 300px;
+  
+
+  
+}
+
+#portfolio{
+margin-left: 0px;
+}
+
+.caption {
+  background:#fff;
+  height: 100%;
+  opacity: 1;
+  position: absolute;
+  transition: all 0.5s ease 0s;
+  width: 100%;
+}
+.caption-content {
+  color: black;
+  padding: 20px;
+  position: absolute;
+  text-align: center;
+  top: 68px;
+}
+.portfolio-item:hover{
+
+}
+
+
+
+/*---------------*/
+/***** Layla *****/
+/*---------------*/
+
+
+figure.effect-layla{
+  background: #fff;
+}
+figure.effect-layla img {
+  height: 300px;
+}
+
+figure.effect-layla figcaption {
+  
+}
+
+figure.effect-layla figcaption::before,
+figure.effect-layla figcaption::after {
+  position: absolute;
+  content: '';
+  opacity: 1;
+  top: 20px;
+}
+ figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  
+ 
+  text-align: center;
+  cursor: pointer;
+}
+figure.effect-layla figcaption{
+  position: absolute;
+   top: 0px;
+   height: 300px;
+   width: 100%;
+
+}
+figure.effect-layla figcaption::before {
+  top: 50px;
+  right: 30px;
+  bottom: 50px;
+  left: 30px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  -webkit-transform: scale(0,1);
+  transform: scale(0,1);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+figure.effect-layla figcaption::after {
+  top: 30px;
+  right: 50px;
+  bottom: 30px;
+  left: 50px;
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
+  -webkit-transform: scale(1,0);
+  transform: scale(1,0);
+  -webkit-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+}
+figcaption a {
+  position: relative;
+  top: -5px;
+}
+.portfolio-item .fa-search-plus{
+  color: black;
+}
+
+/*figure.effect-layla h2 {
+  padding-top: 26%;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+}*/
+
+figure.effect-layla p,figure.effect-layla h2,figure.effect-layla a {
+  padding: 0.5em 2em;
+  text-transform: uppercase;
+  opacity: 0;
+  -webkit-transform: translate3d(0,-10px,0);
+  transform: translate3d(0,-10px,0);
+}
+
+figure.effect-layla img,
+figure.effect-layla h2 {
+  -webkit-transform: translate3d(0,-30px,0);
+  transform: translate3d(0,-30px,0);
+}
+
+figure.effect-layla img{
+  width: 435px;
+}
+figure.effect-layla img,
+figure.effect-layla figcaption::before,
+figure.effect-layla figcaption::after,
+figure.effect-layla p,figure.effect-layla h2,figure.effect-layla a  {
+  
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  
+}
+figure.effect-layla h2{
+  padding-top: 50px;
+}
+figure.effect-layla p{
+  padding: 0px 70px 0 70px;
+}
+
+figure{
+  margin: 0px;
+}
+
+figure.effect-layla:hover img {
+  background: #fff;
+  opacity:0.2;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+figure.effect-layla:hover figcaption::before,
+figure.effect-layla:hover figcaption::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+figure.effect-layla:hover h2,
+figure.effect-layla:hover p,figure.effect-layla:hover a {
+  opacity: 1;
+ 
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+figure.effect-layla:hover figcaption::after,
+figure.effect-layla:hover h2,
+figure.effect-layla:hover p,
+figure.effect-layla:hover img,figure.effect-layla a {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    .owl-theme .owl-controls .owl-page span{
+      background: #fff;
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/*        main css          */
+
+
+#owl-demo .owl-item img{
+  display: block;
+  width: 100%;
+  height: auto;
+ 
+}
+.owl-theme .owl-controls .owl-page span {
+  background: none repeat scroll 0 0 black;
+  border: 1px solid black;
+  display: block;
+  height: 12px;
+  margin: 5px 7px;
+  opacity: 0.5;
+  width: 50px;
+
+}
+.owl-theme .owl-controls .owl-page span{
+    border-radius:0px;
+}
+.owl-page {
+  background: none repeat scroll 0 0 #fff;
+  border: 2px solid;
+}
+
+#test-demo.item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#home{
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+#slider{
+    width: 100%;
+    height: auto;
+}
+
+.main-navbar{
+    background-color: #fff;
+    border-color: #fff;
+    height: 62px;
+}
+
+.main-navbar a{
+    color: black;
+
+}
+.user-img{
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 100px;
+    margin: 0 auto;
+
+}
+.user-img img{
+    border-radius: 108px;
+    padding: 10px;
+    margin: 0 auto;
+    vertical-align: center;
+}
+
+#aboutme{
+    margin-top: 50px;
+    padding: 0;
+}
+
+
+
+
+
+
+
+#map-canvas {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 15px;
+  border: 2px solid #fff;
+}
+
+
+hr.small {
+  max-width: 100px;
+}
+
+
+ 
+ .preloader {
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+ .preloader::after {
+  background: none repeat scroll 0 0 #fff;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+.fa.fa-refresh.fa-spin{
+    margin-top: 300px;
+    margin-left: 650px;
+    font-size: 100px;
+    color:#000;
+}
+
+section{
+  
+    margin: 0px 0px;
+    padding: 0px 0px;
+    overflow: hidden;
+    
+}
+
+.navbar-default .navbar-nav > li > a{
+  font-family: Saucer;
+    color: #000;
+    background-color: white;
+    transition:all 1s;
+    padding-bottom: 15px;
+     
+}
+
+.navbar-default .navbar-nav > li:hover a {
+    font-weight: normal;
+    color: #fff;
+    background-color: black;
+}
+
+
+
+.active{
+    color: #000;
+    background:#fff;
+}
+.progress{
+
+  margin-bottom: 14px;
+}
+.progress-bar{
+  background: #000;
+  color: #fff;}
+
+.width{
+  width: 70px;
+  color: #000;
+}
