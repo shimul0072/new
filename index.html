@@ -16,10 +16,12 @@
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/owl.carousel.css">
+        
         <link rel="stylesheet" href="css/owl.theme.css">
         <link rel="stylesheet" href="css/owl.transitions.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="js/venobox/venobox.css">
+        <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -28,7 +30,7 @@
         <![endif]-->
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body>
+    <body id="home" data-spy="scroll" data-target=".navbar-fixed-top">
         <div class="preloader">
             <div class="loader-xbox">
                 <i class="fa fa-refresh fa-spin"></i>
@@ -42,10 +44,10 @@
                     <div class="container-fluid">
                        
                         <div class="col-md-12">
-                            <nav class="navbar navbar-default navbar-fixed-top main-navbar">
+                            <nav class="navbar navbar-default navbar-fixed-top main-navbar bounceInLeft">
  
     
-                                <div class="navbar-header">
+                                <div class="navbar-header page-scroll">
                                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                                     <span class="sr-only">Toggle navigation</span>
                                     <span class="icon-bar"></span>
@@ -58,11 +60,11 @@
                               
                                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                   <ul class="nav navbar-nav pull-right">
-                                    <li><a href="#">Home <span class="sr-only">(current)</span></a></li>
-                                    <li><a href="#">About me</a></li>
-                                    <li><a href="#">portfolio</a></li>
-                                    <li><a href="#">Tetomonial</a></li>
-                                    <li><a href="#contact">contact</a></li>
+                                    <li><a class="page-scroll" href="#home">Home <span class="sr-only">(current)</span></a></li>
+                                    <li><a class="page-scroll" href="#aboutme">About me</a></li>
+                                    <li><a class="page-scroll" href="#portfolio">portfolio</a></li>
+                                    <li><a class="page-scroll" href="#client">client</a></li>
+                                    <li><a class="page-scroll" href="#contact">contact</a></li>
                                    
                                   </ul>
                                  
@@ -85,21 +87,23 @@
         </section>
         <div class="clearfix"></div>
         <section id="aboutme">
-            <div class="row">
-                <div class="col-md-5 text-center">
-                    <h3>ABout ME</h3>
-                    
-                      <img src="img/nazmul.jpg" alt="">  
-                    
-                    
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas consequuntur aliquid quisquam architecto quos omnis, suscipit quod eveniet dolore vero. Tempora odit ut perferendis officia doloremque rerum quidem, repudiandae repellat quaerat, ullam expedita inventore sint esse ipsam, iure recusandae? Ullam quidem nostrum, ratione animi saepe aut iusto vel eligendi at maxime porro illum facilis maiores deleniti rem eum, doloribus qui debitis libero explicabo temporibus quas voluptas. Accusantium non  omnis deleniti.</p>
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-5 text-center">
+                        <h3>ABout ME</h3>
+                        
+                          <img src="img/nazmul.jpg" alt="">  
+                        
+                        
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas consequuntur aliquid quisquam architecto quos omnis, suscipit quod eveniet dolore vero. Tempora odit ut perferendis officia doloremque rerum quidem, repudiandae repellat quaerat, ullam expedita inventore sint esse ipsam, iure recusandae? Ullam quidem nostrum, ratione animi saepe aut iusto vel eligendi at maxime porro illum facilis maiores deleniti rem eum, doloribus qui debitis libero explicabo temporibus quas voluptas. Accusantium non  omnis deleniti.</p>
 
                 
-                </div>
-                <div class="col-md-7 text-center ">
-                    <h3>Skills</h2>
+                    </div>
+                    <div class="col-md-7 text-center">
+                        <h3>Skills</h2>
                         
-                    <div class="row">
+                        <div class="row">
                         <div class="col-md-2">
                             <br>
                            <h4>HTML5</h4> 
@@ -142,16 +146,16 @@
 
 
                         </div>
+                        </div>
                     </div>
-                </div>
  
             </div>
-           
+           </div>
         </section>
-        <section id="portfolio ">
+        <section id="portfolio">
             <div class="row">
-                <div class="col-md-12">
-                    <h2>PORTOLIO</h2>
+                <div class="col-md-2 col-md-offset-5 text-center portfolio">
+                    <h2>PORTfOLIO</h2>
                 </div>
             </div>
             <div class="row">
@@ -222,9 +226,9 @@
                 
             </div>
         </section>
-        <section id="testimonial">
+        <section id="client">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-2 col-md-offset-5 text-center">
                     <h2>Clients</h2>
                 </div>
             </div>
@@ -246,13 +250,14 @@
        <section class="contact" id="contact">
         
             <div class="row">
-                <div class="col-md-12 text-center">
+                <div class="col-md-2 col-md-offset-5 text-center">
                     <h2>Contact Me</h2>
                     
                 </div>
             </div>
             <div id="map-canvas"></div>
-            <div class="row">
+            <div class="container">
+                <div class="row">
                 <div class="col-md-6 address">
                     <div class="contact-info-right">
                         <p><i class="fa fa-map-marker"></i> 304/1, Ahmed Nagar, Ansar Camp<br/> Mirpur-1, Dhaka</p>
@@ -277,13 +282,12 @@
                     </div>
 
                 </div>
+            </div>
 
             </div>
             <div class="row">
-                <div class="col-md-4">
-                    
-                </div>
-                <div class="col-md-8">
+               
+                <div class="col-md-12 text-center">
                      <div class="social-link ">
                         <a data-toggle="tooltip" ata-placement="top" title="Facebook" href=""><i class="fa fa-facebook fa-3x"></i></a>
                         <a data-toggle="tooltip" data-placement="top" title="Twitter" href=""><i class="fa fa-twitter fa-3x"></i></a>
@@ -299,6 +303,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnycWatbGyK6ldFqErjFtko1yeMclNUOA&amp;sensor=true"></script>
         <script src="js/plugins.js"></script>
         <script src="js/venobox/venobox.min.js"></script>
